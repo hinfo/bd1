@@ -187,3 +187,7 @@ AS
 BEGIN
 NEW.ID_VEN=gen_id(G_VENDA,1);
 END
+
+--Select com expressões
+SELECT r.QUANT, r.PRECO_UNIT,(r.QUANT*r.PRECO_UNIT)
+FROM VENDA_FILME r
