@@ -191,3 +191,6 @@ END
 --Select com expressões
 SELECT r.QUANT, r.PRECO_UNIT,(r.QUANT*r.PRECO_UNIT)
 FROM VENDA_FILME r
+
+SELECT r.ID_VENDA, r.PRECO_UNIT, r.QUANT, (r.PRECO_UNIT*r.QUANT) as receita,r.QUANT*12 as total_anual
+FROM VENDA_FILME r
